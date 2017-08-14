@@ -1,0 +1,2 @@
+# Kony-Engagement-Service-Demo-Visualizer-GeoBoundries-
+Sample application that demostrates the messaging and user engagement capabilities of Kony MobileFabric Messaging Services. Send push, SMS or email messages, capture user profile data, define user segmentation rules, run campaigns, and trigger messages based on client or server side events. You can download the Visualizer sample project from here. From the 7.3.1 version of engagement server, the mobile number is not required for subscribing the audience member.
