@@ -6,13 +6,15 @@ Application to showcase the following featues of Kony Engagement Service:
 - Subscribing to the email, push and sms messages.
 - Sending adhoc SMS, Push, Email and pass notifications
 - Receiving campaign messages
-- Ability to trigger and event and receive event notifications .
+- Ability to trigger and event and receive event notifications.
+- Monitor a set of geoboundaries that are created in the engagement server and receive notifications. 
+
 
 # To run this client side app
 
 1. Download the project zip file.
 2. Unzip the project to any folder.
-3. Launch Kony Visualizer Enterprise version 7.2.
+3. Launch Kony Visualizer Enterprise version 8.0.
 4. Import the project by selecting the KonyMsgDemo folder.
 5. Build and run the app.
 
