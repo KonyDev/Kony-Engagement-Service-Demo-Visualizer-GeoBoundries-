@@ -1,0 +1,3 @@
+function kmsapppreappinit(params) {
+    return
+}
