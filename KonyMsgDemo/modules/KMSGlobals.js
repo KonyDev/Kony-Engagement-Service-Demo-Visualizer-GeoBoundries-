@@ -14,7 +14,7 @@ var isDeleteAudience;
 var nameRegExp = /[\W]/i;
 var emailReg = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
 var mobReg = /^(\+)(\d{1,3})(\d{10})$/;
-audienceEmail = "xxx@xzx.com";
+audienceEmail = "";
 audienceStatus = true;
 audienceEmailSubs = false;
 audiencePushSubs = false;

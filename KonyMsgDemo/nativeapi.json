@@ -1,6 +1,28 @@
 {
     "NativeFunctionAPI": {
-        "iOS": {},
-        "Android": {}
+        "iOS": {
+            "10.0": {
+                "Kony_SyncV2-iOS-10.0": {
+                    "title": "Kony_SyncV2",
+                    "platform": "iOS",
+                    "os": "10.0",
+                    "url": "D:\\workspaces\\Viz8.0beta\\Kony_Visualizer_Enterprise\\configuration\\org.eclipse.osgi\\bundles\\488\\1\\.cp\\resources\\sdk\\nativeBindings\\Kony_SyncV2-iOS-10.0.zip",
+                    "filepath": "D:\\workspaces\\VizWorkspace8.0beta\\KonyMsgDemo\\nativebindings\\iOS\\10.0\\Kony_SyncV2-iOS-10.0.zip",
+                    "enable": true
+                }
+            }
+        },
+        "Android": {
+            "4.0": {
+                "Kony_SyncV2-Android-4.0": {
+                    "title": "Kony_SyncV2",
+                    "platform": "Android",
+                    "os": "4.0",
+                    "url": "D:\\workspaces\\Viz8.0beta\\Kony_Visualizer_Enterprise\\configuration\\org.eclipse.osgi\\bundles\\488\\1\\.cp\\resources\\sdk\\nativeBindings\\Kony_SyncV2-Android-4.0.zip",
+                    "filepath": "D:\\workspaces\\VizWorkspace8.0beta\\KonyMsgDemo\\nativebindings\\Android\\4.0\\Kony_SyncV2-Android-4.0.zip",
+                    "enable": true
+                }
+            }
+        }
     }
 }

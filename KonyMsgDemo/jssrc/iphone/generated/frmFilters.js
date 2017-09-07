@@ -18,9 +18,9 @@ function addWidgetsfrmFilters() {
         "height": "8%",
         "id": "lblLocation",
         "isVisible": true,
-        "left": "0%",
+        "left": "4%",
         "skin": "CopyslLabel0g00970d5ae294b",
-        "text": " Location",
+        "text": "Location",
         "top": "0%",
         "width": "100%",
         "zIndex": 1
@@ -81,7 +81,7 @@ function addWidgetsfrmFilters() {
     var lblLatitude = new kony.ui.Label({
         "id": "lblLatitude",
         "isVisible": true,
-        "left": "2%",
+        "left": "4%",
         "skin": "CopyslLabel0c1bfd4137d714e",
         "text": "Latitude : ",
         "top": "19%",
@@ -148,10 +148,10 @@ function addWidgetsfrmFilters() {
         "height": "8%",
         "id": "lblDistance",
         "isVisible": true,
-        "left": "0%",
+        "left": "4%",
         "skin": "CopyslLabel0g00970d5ae294b",
-        "text": " Distance",
-        "top": "22%",
+        "text": "Distance",
+        "top": "22.03%",
         "width": "100%",
         "zIndex": 1
     }, {
@@ -163,7 +163,7 @@ function addWidgetsfrmFilters() {
         "wrapping": constants.WIDGET_TEXT_WORD_WRAP
     });
     var listDistance = new kony.ui.ListBox({
-        "height": "8%",
+        "height": "10%",
         "id": "listDistance",
         "isVisible": true,
         "left": "0%",
@@ -182,9 +182,10 @@ function addWidgetsfrmFilters() {
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [6, 0, 0, 0],
+        "padding": [0, 0, 4, 0],
         "paddingInPixel": false
     }, {
+        "dropDownImage": "downarrow.png",
         "groupCells": false,
         "viewConfig": {
             "toggleViewConfig": {
@@ -197,10 +198,10 @@ function addWidgetsfrmFilters() {
         "height": "8%",
         "id": "lblTags",
         "isVisible": true,
-        "left": "0%",
+        "left": "4%",
         "skin": "CopyslLabel0g00970d5ae294b",
-        "text": " Tags",
-        "top": "38%",
+        "text": "Tags",
+        "top": "40%",
         "width": "100%",
         "zIndex": 1
     }, {
@@ -220,13 +221,14 @@ function addWidgetsfrmFilters() {
         "left": "0%",
         "numberOfVisibleLines": 3,
         "skin": "CopyslTextArea0b0839adc187b42",
+        "text": "dlsfjasdflk\n",
         "textInputMode": constants.TEXTAREA_INPUT_MODE_ANY,
-        "top": "48%",
+        "top": "50%",
         "width": "100%",
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_TOP_LEFT,
-        "padding": [2, 2, 2, 2],
+        "padding": [4, 2, 2, 2],
         "paddingInPixel": false
     }, {
         "autoCorrect": false,
@@ -236,14 +238,14 @@ function addWidgetsfrmFilters() {
     });
     var btnSearch = new kony.ui.Button({
         "focusSkin": "CopyslButtonGlossRed0g5ba4631fab446",
-        "height": "8%",
+        "height": "10%",
         "id": "btnSearch",
         "isVisible": true,
         "left": "0%",
         "onClick": AS_Button_g4db433b09be4f05a7ac932c8737e957,
         "skin": "CopyslButtonGlossBlue0d016ef26e61049",
         "text": "SEARCH",
-        "top": "92%",
+        "top": "90%",
         "width": "100%",
         "zIndex": 1
     }, {

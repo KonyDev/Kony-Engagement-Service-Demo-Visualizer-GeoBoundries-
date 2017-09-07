@@ -4,6 +4,7 @@
         "apis": {
             "custom": [
                 {
+                    "kuid": "hd64676af3f44aa98b82d39fb63c814d",
                     "paramList": [
                         {
                             "name": "providername"
@@ -17,6 +18,7 @@
                     "type": "api"
                 },
                 {
+                    "kuid": "cbef91eb435b4d63aee69e3e5c748ac4",
                     "paramList": [],
                     "propertyKey": "getUsername",
                     "pw": {
@@ -26,6 +28,7 @@
                     "type": "api"
                 },
                 {
+                    "kuid": "fabe2784967d447c89cdc789485b01ff",
                     "paramList": [],
                     "propertyKey": "getPassword",
                     "pw": {
@@ -35,6 +38,7 @@
                     "type": "api"
                 },
                 {
+                    "kuid": "e405974cd7a24424aa0e444be8a23232",
                     "paramList": [
                         {
                             "name": "input"
@@ -48,6 +52,7 @@
                     "type": "api"
                 },
                 {
+                    "kuid": "iae8f1e4ed86414a9ba15af71e1d7903",
                     "paramList": [],
                     "propertyKey": "rememberMe",
                     "pw": {
@@ -56,11 +61,13 @@
                     },
                     "type": "api"
                 }
-            ]
+            ],
+            "passthrough": []
         },
         "events": {
             "custom": [
                 {
+                    "kuid": "b5a44eb0a3d04285a46283f3ce3b788b",
                     "paramList": [],
                     "propertyKey": "loginSuccessEvent",
                     "pw": {
@@ -71,6 +78,7 @@
                     "type": "event"
                 },
                 {
+                    "kuid": "ab108f9fec894f15bf59a1d46279cde5",
                     "paramList": [],
                     "propertyKey": "usernameOnDone",
                     "pw": {
@@ -81,6 +89,7 @@
                     "type": "event"
                 },
                 {
+                    "kuid": "b5f9b7d784a64f8d9d13fb6e93ef256d",
                     "paramList": [],
                     "propertyKey": "passwordOnDone",
                     "pw": {
@@ -91,6 +100,7 @@
                     "type": "event"
                 },
                 {
+                    "kuid": "e729bc6a28e94d588c2e32eb9be74604",
                     "paramList": [],
                     "propertyKey": "submitOnClick",
                     "pw": {
@@ -101,6 +111,7 @@
                     "type": "event"
                 },
                 {
+                    "kuid": "fb7ddc2e016a41cdb324a9fc972d4b17",
                     "paramList": [],
                     "propertyKey": "remembermeOnSelection",
                     "pw": {
@@ -111,6 +122,7 @@
                     "type": "event"
                 },
                 {
+                    "kuid": "h9a0f3e639ee42d5aeedff08dd792759",
                     "paramList": [],
                     "propertyKey": "loginFailureEvent",
                     "pw": {
@@ -124,6 +136,7 @@
             "passthrough": [
                 {
                     "access": "Enable",
+                    "kuid": "e132d2c727214da487a2e7871d67c527",
                     "originalPropertyKey": "onClick",
                     "propertyKey": "forgotPasswordOnClick",
                     "pw": {
@@ -139,6 +152,12 @@
                 }
             ]
         },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
         "properties": {
             "custom": [
                 {
@@ -146,6 +165,7 @@
                     "action": "messagePassAction",
                     "actionType": "Invoke Action",
                     "defaultValue": "3",
+                    "kuid": "h53405c491f44109afd3ac9b1f3222f7",
                     "originalPropertyKey": "usernameMinimumChar",
                     "propertyKey": "usernameMinimumChar",
                     "pw": {
@@ -161,6 +181,7 @@
                     "action": "messagePassAction",
                     "actionType": "Invoke Action",
                     "defaultValue": "4",
+                    "kuid": "ge9afceccb2447ee8e834d5e42354090",
                     "originalPropertyKey": "passwordMinimumChar",
                     "propertyKey": "passwordMinimumChar",
                     "pw": {
@@ -176,6 +197,7 @@
                     "action": "messagePassAction",
                     "actionType": "Invoke Action",
                     "defaultValue": "Username Too Small",
+                    "kuid": "j04fcf4416544bda9934233929b1860c",
                     "originalPropertyKey": "usernameValidationMsg",
                     "propertyKey": "usernameValidationMsg",
                     "pw": {
@@ -191,6 +213,7 @@
                     "action": "messagePassAction",
                     "actionType": "Invoke Action",
                     "defaultValue": "Password Too Small",
+                    "kuid": "gfd443c0dd58414882d815b7eb89d78b",
                     "originalPropertyKey": "passwordValidationMsg",
                     "propertyKey": "passwordValidationMsg",
                     "pw": {
@@ -206,6 +229,7 @@
                     "action": "messagePassAction",
                     "actionType": "Invoke Action",
                     "defaultValue": "userstore",
+                    "kuid": "e3ee4bbbd7e449a198ff8bb4a1310b06",
                     "originalPropertyKey": "providerName",
                     "propertyKey": "providerName",
                     "pw": {
@@ -221,6 +245,7 @@
                     "action": "messagePassAction",
                     "actionType": "Invoke Action",
                     "defaultValue": true,
+                    "kuid": "ca2f615d70264c26b52d31d0f15e3c22",
                     "originalPropertyKey": "encryptCredentials",
                     "propertyKey": "encryptCredentials",
                     "pw": {
@@ -235,6 +260,7 @@
             "passthrough": [
                 {
                     "access": "Enable",
+                    "kuid": "e413309c6d2842af9b7a93f2c6970fbf",
                     "originalPropertyKey": "src",
                     "propertyKey": "logoSource",
                     "pw": {
@@ -259,6 +285,7 @@
                 },
                 {
                     "access": "Enable",
+                    "kuid": "e146cde783034ab381149a91be43b516",
                     "originalPropertyKey": "imageScaleMode",
                     "propertyKey": "logoScaleMode",
                     "pw": {
@@ -274,6 +301,7 @@
                 },
                 {
                     "access": "Enable",
+                    "kuid": "ffe1f73e62084380b733e5be05978eea",
                     "originalPropertyKey": "text",
                     "propertyKey": "usernamePlaceholder",
                     "pw": {
@@ -289,6 +317,7 @@
                 },
                 {
                     "access": "Enable",
+                    "kuid": "h254b1e27c7144b6aeb5089a671951b8",
                     "originalPropertyKey": "text",
                     "propertyKey": "passwordPlaceholder",
                     "pw": {
@@ -304,6 +333,7 @@
                 },
                 {
                     "access": "Enable",
+                    "kuid": "edd07ec55c274f7e8e3cd79a06d44e4f",
                     "originalPropertyKey": "maxTextLength",
                     "propertyKey": "usernameMaxChar",
                     "pw": {
@@ -319,6 +349,7 @@
                 },
                 {
                     "access": "Enable",
+                    "kuid": "a77b3ba3756e4933ad580ef9ef463033",
                     "originalPropertyKey": "maxTextLength",
                     "propertyKey": "passwordMaxChar",
                     "pw": {
@@ -334,6 +365,7 @@
                 },
                 {
                     "access": "Enable",
+                    "kuid": "hf67511bd7d94f9a8f0007a1c47f0361",
                     "originalPropertyKey": "textInputMode",
                     "propertyKey": "usernameInputMode",
                     "pw": {
@@ -349,6 +381,7 @@
                 },
                 {
                     "access": "Enable",
+                    "kuid": "d37fa408a75748dbb8b4cc1fcfd3c3a6",
                     "originalPropertyKey": "textInputMode",
                     "propertyKey": "passwordInputMode",
                     "pw": {
@@ -364,6 +397,7 @@
                 },
                 {
                     "access": "Enable",
+                    "kuid": "aa15f7a4e36844d8bcba986e76d07177",
                     "originalPropertyKey": "isVisible",
                     "propertyKey": "remembermeProperty",
                     "pw": {
@@ -379,6 +413,7 @@
                 },
                 {
                     "access": "Enable",
+                    "kuid": "af00f1afc59a4a24be742811a8f3ded1",
                     "originalPropertyKey": "isVisible",
                     "propertyKey": "touchIDProperty",
                     "pw": {
@@ -394,6 +429,7 @@
                 },
                 {
                     "access": "Enable",
+                    "kuid": "fbc4c72a602845589ea15fc46484b7f3",
                     "originalPropertyKey": "isVisible",
                     "propertyKey": "socialLoginVisible",
                     "pw": {
@@ -409,6 +445,7 @@
                 },
                 {
                     "access": "Enable",
+                    "kuid": "da3bcf97462945258a19b16b362e5023",
                     "originalPropertyKey": "text",
                     "propertyKey": "forgotPasswordText",
                     "pw": {
@@ -424,6 +461,7 @@
                 },
                 {
                     "access": "Enable",
+                    "kuid": "ce4b2873109d4c02a2fef71cc789f6ff",
                     "originalPropertyKey": "text",
                     "propertyKey": "submitButtonText",
                     "pw": {
@@ -439,6 +477,7 @@
                 },
                 {
                     "access": "Enable",
+                    "kuid": "d28f10f059a6487da5e96d785b806257",
                     "originalPropertyKey": "src",
                     "propertyKey": "rememberMeSelectedSource",
                     "pw": {
@@ -463,6 +502,7 @@
                 },
                 {
                     "access": "Enable",
+                    "kuid": "a9cf3d24565d4af3979bd515c3900e73",
                     "originalPropertyKey": "src",
                     "propertyKey": "rememberMeUnSelectedSource",
                     "pw": {
@@ -487,12 +527,35 @@
                 },
                 {
                     "access": "Enable",
+                    "kuid": "fb19eea849544ada9bd2d26c8c58e0d9",
                     "originalPropertyKey": "centerY",
                     "propertyKey": "touchIdCenterY",
                     "pw": {
                         "access": "readwrite",
                         "category": "look",
+                        "defaultValue": {
+                            "type": "string",
+                            "value": ""
+                        },
                         "displayName": "Touch ID Center Y",
+                        "forkablePlatforms": {
+                            "desktop": [
+                                "kiosk",
+                                "desktopweb"
+                            ],
+                            "mobile": [
+                                "iphone",
+                                "android",
+                                "winphone8",
+                                "spa"
+                            ],
+                            "tablet": [
+                                "ipad",
+                                "android",
+                                "windows8",
+                                "spa"
+                            ]
+                        },
                         "srcWidget": "flxTouchId",
                         "type": "object",
                         "uiRepresentation": "Label-Textbox-Combobox",
@@ -502,12 +565,35 @@
                 },
                 {
                     "access": "Enable",
+                    "kuid": "a11f3cf03b3b4e10a9a947520e2ca35a",
                     "originalPropertyKey": "centerY",
                     "propertyKey": "socialLoginCenterY",
                     "pw": {
                         "access": "readwrite",
                         "category": "look",
+                        "defaultValue": {
+                            "type": "string",
+                            "value": ""
+                        },
                         "displayName": "Social Login Center Y",
+                        "forkablePlatforms": {
+                            "desktop": [
+                                "kiosk",
+                                "desktopweb"
+                            ],
+                            "mobile": [
+                                "iphone",
+                                "android",
+                                "winphone8",
+                                "spa"
+                            ],
+                            "tablet": [
+                                "ipad",
+                                "android",
+                                "windows8",
+                                "spa"
+                            ]
+                        },
                         "srcWidget": "flxSocialLogin",
                         "type": "object",
                         "uiRepresentation": "Label-Textbox-Combobox",
@@ -517,6 +603,7 @@
                 },
                 {
                     "access": "Enable",
+                    "kuid": "gd23623e72d848f69e253e02b5a07db3",
                     "originalPropertyKey": "isVisible",
                     "propertyKey": "facebookLogin",
                     "pw": {
@@ -532,12 +619,35 @@
                 },
                 {
                     "access": "Enable",
+                    "kuid": "fa5fddf871b941fa8f0fe5a9576f59ec",
                     "originalPropertyKey": "centerX",
                     "propertyKey": "facebookCenterX",
                     "pw": {
                         "access": "readwrite",
                         "category": "look",
+                        "defaultValue": {
+                            "type": "string",
+                            "value": ""
+                        },
                         "displayName": "Facebook CenterX",
+                        "forkablePlatforms": {
+                            "desktop": [
+                                "kiosk",
+                                "desktopweb"
+                            ],
+                            "mobile": [
+                                "iphone",
+                                "android",
+                                "winphone8",
+                                "spa"
+                            ],
+                            "tablet": [
+                                "ipad",
+                                "android",
+                                "windows8",
+                                "spa"
+                            ]
+                        },
                         "srcWidget": "flxFacebook",
                         "type": "object",
                         "uiRepresentation": "Label-Textbox-Combobox",
@@ -547,6 +657,7 @@
                 },
                 {
                     "access": "Enable",
+                    "kuid": "bacdc23ec20947d2833b8db5f465ddab",
                     "originalPropertyKey": "isVisible",
                     "propertyKey": "linkedinLogin",
                     "pw": {
@@ -562,12 +673,35 @@
                 },
                 {
                     "access": "Enable",
+                    "kuid": "hc2f04a38ada41f6a5b5f6629457b067",
                     "originalPropertyKey": "centerX",
                     "propertyKey": "linkedinCenterX",
                     "pw": {
                         "access": "readwrite",
                         "category": "look",
+                        "defaultValue": {
+                            "type": "string",
+                            "value": ""
+                        },
                         "displayName": "LinkedIn CenterX",
+                        "forkablePlatforms": {
+                            "desktop": [
+                                "kiosk",
+                                "desktopweb"
+                            ],
+                            "mobile": [
+                                "iphone",
+                                "android",
+                                "winphone8",
+                                "spa"
+                            ],
+                            "tablet": [
+                                "ipad",
+                                "android",
+                                "windows8",
+                                "spa"
+                            ]
+                        },
                         "srcWidget": "flxLinkedin",
                         "type": "object",
                         "uiRepresentation": "Label-Textbox-Combobox",
@@ -577,6 +711,7 @@
                 },
                 {
                     "access": "Enable",
+                    "kuid": "a000e277c8f843c5a472bd9ca60d6f11",
                     "originalPropertyKey": "isVisible",
                     "propertyKey": "office365Login",
                     "pw": {
@@ -592,12 +727,35 @@
                 },
                 {
                     "access": "Enable",
+                    "kuid": "f0972eef0276417e998429d729dc296d",
                     "originalPropertyKey": "centerX",
                     "propertyKey": "office365CenterX",
                     "pw": {
                         "access": "readwrite",
                         "category": "look",
+                        "defaultValue": {
+                            "type": "string",
+                            "value": ""
+                        },
                         "displayName": "Office365 CenterX",
+                        "forkablePlatforms": {
+                            "desktop": [
+                                "kiosk",
+                                "desktopweb"
+                            ],
+                            "mobile": [
+                                "iphone",
+                                "android",
+                                "winphone8",
+                                "spa"
+                            ],
+                            "tablet": [
+                                "ipad",
+                                "android",
+                                "windows8",
+                                "spa"
+                            ]
+                        },
                         "srcWidget": "flxOffice365",
                         "type": "object",
                         "uiRepresentation": "Label-Textbox-Combobox",
@@ -607,6 +765,7 @@
                 },
                 {
                     "access": "Enable",
+                    "kuid": "e3b20c327f6b4d74903ddd2671a1e978",
                     "originalPropertyKey": "src",
                     "propertyKey": "facebookSource",
                     "pw": {
@@ -631,6 +790,7 @@
                 },
                 {
                     "access": "Enable",
+                    "kuid": "f32fc805142d4440aafab353aef975d9",
                     "originalPropertyKey": "src",
                     "propertyKey": "linkedinSource",
                     "pw": {
@@ -655,6 +815,7 @@
                 },
                 {
                     "access": "Enable",
+                    "kuid": "d3ce9d65a6184bdeb3517a613d2a4449",
                     "originalPropertyKey": "src",
                     "propertyKey": "office365Source",
                     "pw": {
@@ -678,6 +839,10 @@
                     "srcWgtKUID": "he5fc1573bfc411f8922c76c4b6d7cde"
                 }
             ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
         }
     },
     "namespace": "com.konymp",

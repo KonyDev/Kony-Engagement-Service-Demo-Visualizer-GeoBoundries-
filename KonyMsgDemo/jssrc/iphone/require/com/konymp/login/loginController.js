@@ -165,7 +165,7 @@ define(function() {
             this.initGettersSetters.apply(this, arguments);
         }
     };
-    controller.Action15024577985982857 = function() {
+    controller.Action15048087621865613 = function() {
         if (this.forgotPasswordOnClick) {
             this.forgotPasswordOnClick.apply(this, arguments);
         }

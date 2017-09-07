@@ -11,7 +11,7 @@ function getGeoLocations() {
     kony.application.showLoadingScreen(null, "Loading...", constants.LOADING_SCREEN_POSITION_ONLY_CENTER, false, true, {});
     client.setMessagingServiceEndPoint(KMSPROP.kmsServerUrl + "/api/v1");
     messagingSvc = client.getMessagingService();
-    messagingSvc.setKmsAppId("12109-6499376397");
+    messagingSvc.setKmsAppId(KMSPROP.appId);
     messagingSvc.setKSID(kony.store.getItem("KSID"));
     registerGeoBoundary(10, "");
 }
@@ -45,7 +45,7 @@ function registerGeoBoundary(radius, tags) {
             var requiredReadyState = 4;
             if (response.readyState === requiredReadyState) {
                 try {
-                    //alert(JSON.stringify(konyRef.getDataStore().getItem("geoBoundaryData")));
+                    // alert(JSON.stringify(konyRef.getDataStore().getItem("geoBoundaryData")));
                     kony.print("#####Start successCallbackLocation");
                     //details = konyRef.getDataStore().getItem("geoBoundaryData");
                     details = JSON.parse(response.responseText).locations;
@@ -53,7 +53,7 @@ function registerGeoBoundary(radius, tags) {
                     kony.print("in set data" + details);
                     var data = {
                         "lblName": "locationName",
-                        "lblDist": "distance",
+                        "lblDist": "radius",
                         "lblCount": "count"
                     };
                     frmGeoLocations.segLocations.widgetDataMap = data;
@@ -61,7 +61,7 @@ function registerGeoBoundary(radius, tags) {
                     var i = 0;
                     for (var k in details) {
                         i++;
-                        details[k].distance = parseFloat(details[k].distance).toFixed(2) + " Mi";
+                        details[k].radius = Math.abs(parseFloat(details[k].radius).toFixed(2)) + " Mi";
                         details[k].count = "" + i;
                         keys.push(details[k]);
                     }
@@ -100,13 +100,15 @@ function setMapPins() {
         navigatetoZoom: true,
         radius: options.radius * 1609.34,
         circleConfig: {
-            lineColor: "0xA1CBFFFF",
-            fillColor: "0xB1D2E655",
+            lineColor: "0xA3A2A1FF",
+            fillColor: "0xB1D2E6AA",
             lineWidth: 2
         },
     };
-    var tempRadius = (parseFloat(refreshBoundaryDetails.distance) * 1609.34);
-    alert(tempRadius);
+    var tempRadius = Math.abs((parseFloat(refreshBoundaryDetails.distance) * 1609.34));
+    //     if(tempRadius<0)
+    //       tempRadius=tempRadius*(-1);
+    //alert(tempRadius);
     var refreshBoundaryCircle = {
         id: "circle2",
         centerLocation: {
@@ -117,16 +119,16 @@ function setMapPins() {
         navigatetoZoom: true,
         radius: tempRadius,
         circleConfig: {
-            lineColor: "0x358f51FF",
-            fillColor: "0x358f5125",
+            lineColor: "0x85AB61FF",
+            fillColor: "0x85AB61A5",
             lineWidth: 2
         },
     };
     frmGeoLocations.mapLocations.removeCircle("circle1");
     frmGeoLocations.mapLocations.removeCircle("circle2");
-    for (i = 0; i < circles.length; i++) {
-        frmGeoLocations.mapLocations.removeCircle(circles[i].id);
-    }
+    //     for (i = 0; i < circles.length; i++) {
+    //         frmGeoLocations.mapLocations.removeCircle(circles[i].id);
+    //     }
     frmGeoLocations.mapLocations.locationData = [];
     var count = 1;
     for (var i = 0; i < details.length; i++) {
@@ -139,29 +141,29 @@ function setMapPins() {
             source: "l" + (i + 1) + ".png"
         };
         locations.push(location);
-        circle = {
-            id: "circle" + details[i].id,
-            centerLocation: {
-                lat: details[i].latitude,
-                lon: details[i].longitude
-            },
-            showCenterPin: false,
-            navigatetoZoom: true,
-            radius: (parseFloat(details[i].radius) * 1609.34), //refreshBoundary.distance.slice(1, refreshBoundary.distance.length),
-            circleConfig: {
-                lineColor: "0xFFFFFFFF",
-                fillColor: "0xE9E6E651",
-                lineWidth: 1
-            },
-        };
-        circles.push(circle);
+        //         circle = {
+        //             id: "circle" + details[i].id,
+        //             centerLocation: {
+        //                 lat: details[i].latitude,
+        //                 lon: details[i].longitude
+        //             },
+        //             showCenterPin: false,
+        //             navigatetoZoom: true,
+        //             radius: (parseFloat(details[i].radius) * 1609.34), //refreshBoundary.distance.slice(1, refreshBoundary.distance.length),
+        //             circleConfig: {
+        //                 lineColor: "0xFFFFFFFF",
+        //                 fillColor: "0xE9E6E651",
+        //                 lineWidth: 1
+        //             },
+        //         };
+        //         circles.push(circle);
     }
     frmDetails.mapDetails.zoomLevel = 13;
     frmGeoLocations.mapLocations.addCircle(circleMain);
     frmGeoLocations.mapLocations.addCircle(refreshBoundaryCircle);
-    for (i = 0; i < details.length; i++) {
-        frmGeoLocations.mapLocations.addCircle(circles[i]);
-    }
+    //     for (i = 0; i < details.length; i++) {
+    //         frmGeoLocations.mapLocations.addCircle(circles[i]);
+    //     }
     frmGeoLocations.mapLocations.zoomLevel = 13;
     frmGeoLocations.mapLocations.locationData = locations;
     getLocationName();

@@ -181,7 +181,7 @@ function kmsapppostappinit(params) {
 }
 
 function kmsapppreappinit(params) {
-    return
+    return setApplicationCallBacks.call(this);
 }
 
 function p2kwiet428023489458_btnReload_onClick_seq0(eventobject) {

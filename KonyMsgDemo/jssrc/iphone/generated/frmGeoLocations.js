@@ -141,7 +141,7 @@ function addWidgetsfrmGeoLocations() {
         "maxNumberOfLines": 1,
         "onTouchStart": AS_Label_f957d34a0f1c4ae9be17e6d8e1bf606c,
         "skin": "CopyslLabel0bf93f7f4dbf74d",
-        "text": "Geo Boundries",
+        "text": "Geo Boundaries",
         "textTruncatePosition": constants.TEXT_TRUNCATE_END,
         "top": "0%",
         "width": "65%",

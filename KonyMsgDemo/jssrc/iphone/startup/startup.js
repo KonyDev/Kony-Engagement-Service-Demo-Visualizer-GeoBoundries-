@@ -8,7 +8,7 @@ var appConfig = {
     serverIp: "10.10.12.145",
     serverPort: "80",
     secureServerPort: "443",
-    isDebug: true,
+    isDebug: false,
     middlewareContext: "kmsapp1",
     isturlbase: "https://mobilefabric-demo.konycloud.com/services",
     isMFApp: true,
@@ -39,6 +39,7 @@ function appInit(params) {
     kony.application.setCheckBoxSelectionImageAlignment(constants.CHECKBOX_SELECTION_IMAGE_ALIGNMENT_RIGHT);
     kony.application.setDefaultTextboxPadding(false);
     kony.application.setRespectImageSizeForImageWidgetAlignment(true);
+    initializeMVCTemplates();
     initializeUserWidgets();
     initializetmpLocations();
     initializetmpSuggest();
@@ -101,6 +102,6 @@ function onSuccessSDKCallBack() {
 kony.application.setApplicationMode(constants.APPLICATION_MODE_NATIVE);
 //If default locale is specified. This is set even before any other app life cycle event is called.
 loadResources();
-// If you wish to debug Application Initialization events, now is the time to
-// place breakpoints.
-debugger;
+kony.print = function() {
+    return;
+};

@@ -25,7 +25,33 @@ function callbackiPhoneSetCallbacks() {
 		onfailurederegistration : unregFailureiPhoneCallback
 	};
 	kony.push.setCallbacks(callbacksTable);
+  localIPhoneNotificationCallBacks();
 }
+
+function localIPhoneNotificationCallBacks() {
+    try {
+        kony.localnotifications.setCallbacks({
+            "offlinenotification": offlineIphoneLocalNotification,
+            "onlinenotification": onlineIphoneLocalNotification
+    });
+    } catch (err) {
+        kony.print("Error Code " + err.errorCode + " Message " + err.message);
+    }
+}
+
+function offlineIphoneLocalNotification(msg,id)
+{
+  
+  kony.print(JSON.stringify(msg));
+//   frmHome.show();
+}
+
+function onlineIphoneLocalNotification(msg,id)
+{
+  kony.print(JSON.stringify(msg));
+//   frmHome.show();
+}
+
 /**
  * Name		:	regSuccessiPhoneCallback
  * Author	:	Kony

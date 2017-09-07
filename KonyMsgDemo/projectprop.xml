@@ -54,7 +54,7 @@
     <attributes name="apmgestureswipe" value="false"/>
     <attributes name="appaddrkey" value="https://api.kony.com/api/v1_0/environments/f624671f-9244-42e8-a143-809a3e0e7aaf/"/>
     <attributes name="appnamekey" value="KMSDemo"/>
-    <attributes name="currentgaversion" value="7.3.0.GA_v201705261734_r4"/>
+    <attributes name="currentgaversion" value="8.0.0.Beta2_v201708070854"/>
     <attributes name="wp10sharedUserCertificates" value="false"/>
     <attributes name="winphone_allowselfsignedcertificate" value="None"/>
     <attributes name="SET_TIME" value="false"/>
@@ -71,7 +71,6 @@
     <attributes name="spawindowstabbasefontsize" value="12"/>
     <attributes name="WP8_ID_CAP_MEDIALIB_PLAYBACK" value="true"/>
     <attributes name="WP8_ID_CAP_WEBBROWSERCOMPONENT" value="true"/>
-    <attributes name="iosenablejsbindings" value="false"/>
     <attributes name="tcbb240basefontsize" value="12"/>
     <attributes name="bb10buildid" value=""/>
     <attributes name="apmerrorunhandledexception" value="false"/>
@@ -123,7 +122,7 @@
     <attributes name="wp10pfxkey" value=""/>
     <attributes name="ACCESS_CHECKIN_PROPERTIES" value="false"/>
     <attributes name="MOUNT_FORMAT_FILESYSTEMS" value="false"/>
-    <attributes name="lastmodifiedtime" value="1498567781106"/>
+    <attributes name="lastmodifiedtime" value="1504802345487"/>
     <attributes name="wp10microphone" value="false"/>
     <attributes name="ID_REQ_NFC" value="false"/>
     <attributes name="devicemsg" value="This device is currently not supported"/>
@@ -144,7 +143,7 @@
     <attributes name="splashlogokey" value="0=bg.png,1=bg.png,8=splash.9.png,2=,46=,42=,16=,18=,43=,1000=,1001=,1002=,31=,32=,45=,22=,23=,24=,35=,44=,36=,21=,37="/>
     <attributes name="wp81stoastcapablekey" value="Not set"/>
     <attributes name="SEND_SMS" value="true"/>
-    <attributes name="iphonebundleidentifierkey" value="com.kone.LatestKMSDemo"/>
+    <attributes name="iphonebundleidentifierkey" value="com.kone.Engagement"/>
     <attributes name="SUBSCRIBED_FEEDS_READ" value="false"/>
     <attributes name="READ_HISTORY_BOOKMARKS" value="false"/>
     <attributes name="WP8_ID_CAP_SPEECH_RECOGNITION" value="true"/>
@@ -356,6 +355,7 @@
     <attributes name="backward_compatibility_mode" value="false"/>
     <attributes name="ID_CAP_PUSH_NOTIFICATION" value="true"/>
     <attributes name="UPDATE_DEVICE_STATS" value="false"/>
+    <attributes name="apmapptransition" value="false"/>
     <attributes name="wp8iconcountnotificationkey" value="false"/>
     <attributes name="enablecharts2d3d" value="false"/>
     <attributes name="USE_CREDENTIALS" value="false"/>
@@ -363,7 +363,6 @@
     <attributes name="deviceexception" value="Unknown Error Occurred &lt;br/&gt; Contact System Admin"/>
     <attributes name="wp81spackagepublichernamekey" value="Kony"/>
     <attributes name="HARDWARE_TEST" value="false"/>
-    <attributes name="androidenablejsbindings" value="false"/>
     <attributes name="tcandroid240basefontsize" value="10"/>
     <attributes name="post_notification" value="false"/>
     <attributes name="certs_key_store_pwd" value="kds/0eUc+i3BqFqSkpCk4g=="/>
@@ -388,6 +387,7 @@
     <attributes name="ID_CAP_WEBBROWSERCOMPONENT" value="true"/>
     <attributes name="wp8iconicsmallkey" value=""/>
     <attributes name="apploadeventkey" value="None"/>
+    <attributes name="support64bit" value="false"/>
     <attributes name="tcbb400basefontsize" value="12"/>
     <attributes name="customgcmbroadcastreceiver" value=""/>
     <attributes name="wp10enablecrashlogkey" value="false"/>
@@ -469,7 +469,7 @@
     <attributes name="ID_CAP_IDENTITY_USER" value="true"/>
     <attributes name="wp10voipCall" value="false"/>
     <attributes name="cloud_env_GUID" value="f624671f-9244-42e8-a143-809a3e0e7aaf"/>
-    <attributes name="androidInstallLocnPref" value="false"/>
+    <attributes name="androidInstallLocnPref" value="true"/>
     <attributes name="android_allowselfsignedcertificates" value="None"/>
     <attributes name="userAccountInformation" value="false"/>
     <attributes name="cloud_env_name" value="Kony Cloud MobileFabric-MobileFabric"/>
@@ -554,7 +554,7 @@
     <attributes name="INTERNET" value="true"/>
     <attributes name="pathpatternkey" value=""/>
     <attributes name="wp10initialRotationPreferenceKey" value="landscape"/>
-    <attributes name="ACCESS_LOCATION_EXTRA_COMMANDS" value="false"/>
+    <attributes name="ACCESS_LOCATION_EXTRA_COMMANDS" value="true"/>
     <attributes name="andapplicationattrs" value=""/>
     <attributes name="BRICK" value="false"/>
     <attributes name="WP8_ID_CAP_PUSH_NOTIFICATION" value="true"/>
@@ -567,6 +567,7 @@
     <attributes name="Videos_Library_Access" value="true"/>
     <attributes name="wp8enforceMaxMemory" value="false"/>
     <attributes name="wp10codeGeneration" value="false"/>
+    <attributes name="apmappload" value="false"/>
     <attributes name="build" value="release"/>
     <attributes name="certs_key_store_type" value="JKS"/>
     <attributes name="spaandroidtab800basefontsize" value="17"/>

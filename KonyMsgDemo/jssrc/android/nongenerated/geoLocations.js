@@ -11,7 +11,7 @@ function getGeoLocations() {
     kony.application.showLoadingScreen(null, "Loading...", constants.LOADING_SCREEN_POSITION_ONLY_CENTER, false, true, {});
     client.setMessagingServiceEndPoint(KMSPROP.kmsServerUrl + "/api/v1");
     messagingSvc = client.getMessagingService();
-    messagingSvc.setKmsAppId("12109-6499376397");
+    messagingSvc.setKmsAppId(KMSPROP.appId);
     messagingSvc.setKSID(kony.store.getItem("KSID"));
     registerGeoBoundary(10, "");
 }
@@ -45,7 +45,7 @@ function registerGeoBoundary(radius, tags) {
             var requiredReadyState = 4;
             if (response.readyState === requiredReadyState) {
                 try {
-                    //alert(JSON.stringify(konyRef.getDataStore().getItem("geoBoundaryData")));
+                    // alert(JSON.stringify(konyRef.getDataStore().getItem("geoBoundaryData")));
                     kony.print("#####Start successCallbackLocation");
                     //details = konyRef.getDataStore().getItem("geoBoundaryData");
                     details = JSON.parse(response.responseText).locations;
@@ -53,7 +53,7 @@ function registerGeoBoundary(radius, tags) {
                     kony.print("in set data" + details);
                     var data = {
                         "lblName": "locationName",
-                        "lblDist": "distance",
+                        "lblDist": "radius",
                         "lblCount": "count"
                     };
                     frmGeoLocations.segLocations.widgetDataMap = data;
@@ -61,7 +61,7 @@ function registerGeoBoundary(radius, tags) {
                     var i = 0;
                     for (var k in details) {
                         i++;
-                        details[k].distance = parseFloat(details[k].distance).toFixed(2) + " Mi";
+                        details[k].radius = Math.abs(parseFloat(details[k].radius).toFixed(2)) + " Mi";
                         details[k].count = "" + i;
                         keys.push(details[k]);
                     }
@@ -101,7 +101,7 @@ function setMapPins() {
         radius: options.radius * 1609.34,
         circleConfig: {
             lineColor: "0xA3A2A1FF",
-            fillColor: "0xB1D2E65F",
+            fillColor: "0xB1D2E6AA",
             lineWidth: 2
         },
     };
@@ -120,7 +120,7 @@ function setMapPins() {
         radius: tempRadius,
         circleConfig: {
             lineColor: "0x85AB61FF",
-            fillColor: "0x85AB6125",
+            fillColor: "0x85AB61A5",
             lineWidth: 2
         },
     };

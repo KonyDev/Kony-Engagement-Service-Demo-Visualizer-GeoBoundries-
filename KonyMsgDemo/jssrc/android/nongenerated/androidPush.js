@@ -26,6 +26,28 @@ function callbackAndroidSetCallbacks() {
         onsuccessfulderegistration: unregSuccessAndroidCallback,
         onfailurederegistration: unregFailureAndroidCallback
     });
+    localAndroidNotificationCallBacks();
+}
+
+function localAndroidNotificationCallBacks() {
+    try {
+        kony.localnotifications.setCallbacks({
+            "offlinenotification": offlineAndroidLocalNotification,
+            "onlinenotification": onlineAndroidLocalNotification
+        });
+    } catch (err) {
+        kony.print("Error Code " + err.errorCode + " Message " + err.message);
+    }
+}
+
+function onlineAndroidLocalNotification(msg, id) {
+    kony.print("JSON.stringify(msg)");
+    //   frmHome.show();
+}
+
+function offlineAndroidLocalNotification(msg, id) {
+    kony.print("JSON.stringify(msg)");
+    //   frmHome.show();
 }
 /**
  * Name		:	regSuccessAndroidCallback

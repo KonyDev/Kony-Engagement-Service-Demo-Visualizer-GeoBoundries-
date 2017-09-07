@@ -546,7 +546,7 @@ define(function() {
             "id": "btnForgotPassword",
             "isVisible": true,
             "left": "0%",
-            "onClick": controller.Action15024577985982857,
+            "onClick": controller.Action15048087621865613,
             "skin": "CopyCopyCopysknsecondaryAction1",
             "text": "Forgot password?",
             "width": "90%",

@@ -1,3 +1,3 @@
 function kmsapppreappinit(params) {
-    return
+    return setApplicationCallBacks.call(this);
 }

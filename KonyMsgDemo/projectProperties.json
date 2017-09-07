@@ -57,13 +57,13 @@
     "mwhttpsportkey": "443",
     "mwportkey": "80",
     "nativeContainerProperties": {
-        "isModified": true,
-        "isEnableJSContainer": false,
-        "isEnableJSContainerAndroid": false,
-        "isEnableJSContaineriOS": false
+        "isModified": false,
+        "isEnableJSContainer": true,
+        "isEnableJSContainerAndroid": true,
+        "isEnableJSContaineriOS": true
     },
     "pasteboardType": "2",
-    "project_version": "sprint28",
+    "project_version": "sprint29",
     "referenceWidth": "375",
     "spaandroidtabbasefontsize": "17",
     "spaipadbasefontsize": "17",

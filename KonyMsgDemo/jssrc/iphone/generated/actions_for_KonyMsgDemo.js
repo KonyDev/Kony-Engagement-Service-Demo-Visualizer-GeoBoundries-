@@ -104,12 +104,6 @@ function AS_Button_fde30cd5d3d749e989b0623c9a3c3c5c(eventobject) {
 
 function AS_Button_g4db433b09be4f05a7ac932c8737e957(eventobject) {
     var tags = frmFilters.txtTags.text;
-    // if(tags==="" || tags === null)
-    //   tags="";
-    // else
-    //   tags = tags.split(",");
-    alert(tags);
-    alert(frmFilters.listDistance.selectedKey);
     registerGeoBoundary(frmFilters.listDistance.selectedKey, tags);
 }
 
@@ -187,7 +181,7 @@ function kmsapppostappinit(params) {
 }
 
 function kmsapppreappinit(params) {
-    return
+    return setApplicationCallBacks.call(this);
 }
 
 function p2kwiet428023489458_btnReload_onClick_seq0(eventobject) {

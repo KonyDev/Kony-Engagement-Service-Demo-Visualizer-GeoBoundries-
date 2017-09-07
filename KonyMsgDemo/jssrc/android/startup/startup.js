@@ -85,6 +85,15 @@ function loadResources() {
     kony.os.loadLibrary({
         "javaclassname": "com.konylabs.ffi.ND_com_kony"
     });
+    kony.os.loadLibrary({
+        "javaclassname": "com.konylabs.ffi.N_KonyLogger"
+    });
+    kony.os.loadLibrary({
+        "javaclassname": "com.konylabs.ffi.N_binarydata"
+    });
+    kony.os.loadLibrary({
+        "javaclassname": "com.konylabs.ffi.ND_binary_util"
+    });
     sdkInitConfig = {
         "appConfig": appConfig,
         "isMFApp": appConfig.isMFApp,
