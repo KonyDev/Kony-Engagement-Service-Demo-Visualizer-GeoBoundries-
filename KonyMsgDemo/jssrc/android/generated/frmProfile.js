@@ -419,7 +419,9 @@ function frmProfileGlobals() {
         "id": "frmProfile",
         "init": p2kwiet428023489545_frmProfile_init_seq0,
         "needAppMenu": true,
-        "preShow": p2kwiet428023489545_frmProfile_preshow_seq0,
+        "preShow": function(eventobject) {
+            p2kwiet428023489545_frmProfile_preshow_seq0(eventobject);
+        },
         "skin": "sknKonyThemeForm",
         "title": "My Profile"
     }, {

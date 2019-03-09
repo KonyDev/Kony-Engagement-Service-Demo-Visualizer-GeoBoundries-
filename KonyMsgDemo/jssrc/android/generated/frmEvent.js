@@ -165,7 +165,9 @@ function frmEventGlobals() {
         "enabledForIdleTimeout": false,
         "id": "frmEvent",
         "needAppMenu": true,
-        "preShow": p2kwiet428023489469_frmEvent_preshow_seq0,
+        "preShow": function(eventobject) {
+            p2kwiet428023489469_frmEvent_preshow_seq0(eventobject);
+        },
         "skin": "sknKonyThemeForm",
         "title": "Trigger Event"
     }, {

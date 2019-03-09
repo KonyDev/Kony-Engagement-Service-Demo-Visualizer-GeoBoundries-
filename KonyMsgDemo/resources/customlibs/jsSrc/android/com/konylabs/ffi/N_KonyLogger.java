@@ -38,7 +38,10 @@ public class N_KonyLogger extends JSLibrary {
  
 	public static final String deactivatePersistors = "deactivatePersistors";
  
-	String[] methods = { getLogLevel, flush, setConfig, setPersistorConfig, setLogLevel, activatePersistors, deactivatePersistors };
+ 
+	public static final String setClaimsToken = "setClaimsToken";
+ 
+	String[] methods = { getLogLevel, flush, setConfig, setPersistorConfig, setLogLevel, activatePersistors, deactivatePersistors, setClaimsToken };
 
 
  Library libs[] = null;
@@ -113,6 +116,15 @@ public class N_KonyLogger extends JSLibrary {
  deactivatedList6 = (Double)params[0];
  }
  ret = this.deactivatePersistors( deactivatedList6 );
+ 
+ 			break;
+ 		case 7:
+ if (paramLen != 1){ return new Object[] {new Double(100),"Invalid Params"}; }
+ java.lang.String claimsToken7 = null;
+ if(params[0] != null && params[0] != LuaNil.nil) {
+ claimsToken7 = (java.lang.String)params[0];
+ }
+ ret = this.setClaimsToken( claimsToken7 );
  
  			break;
  		default:
@@ -208,6 +220,17 @@ public class N_KonyLogger extends JSLibrary {
  		return ret;
 	}
  
+ 
+ 	public final Object[] setClaimsToken( java.lang.String inputKey0 ){
+ 
+		Object[] ret = null;
+ com.kony.logger.Core.KonyJSFacade.setClaimsToken( inputKey0
+ );
+ 
+ ret = new Object[]{LuaNil.nil, new Double(0)};
+ 		return ret;
+	}
+ 
 
 
 class InitializeLogger extends JSLibrary {
@@ -231,7 +254,10 @@ class InitializeLogger extends JSLibrary {
  
 	public static final String logFatal = "logFatal";
  
-	String[] methods = { logTrace, logDebug, logWarning, logInfo, logError, logFatal };
+ 
+	public static final String logPerf = "logPerf";
+ 
+	String[] methods = { logTrace, logDebug, logWarning, logInfo, logError, logFatal, logPerf };
 
 	public Object createInstance(final Object[] params) {
  return new com.kony.logger.Core.KonyJSFacade(
@@ -324,6 +350,19 @@ class InitializeLogger extends JSLibrary {
  );
  
  			break;
+ 		case 6:
+ if (paramLen < 1 || paramLen > 2){ return new Object[] {new Double(100),"Invalid Params"};}
+ inc = 1;
+ 
+ com.konylabs.vm.LuaTable message6 = null;
+ if(params[0+inc] != null && params[0+inc] != LuaNil.nil) {
+ message6 = (com.konylabs.vm.LuaTable)params[0+inc];
+ }
+ ret = this.logPerf(params[0]
+ ,message6
+ );
+ 
+ 			break;
  		default:
 			break;
 		}
@@ -410,6 +449,18 @@ class InitializeLogger extends JSLibrary {
  
 		Object[] ret = null;
  ((com.kony.logger.Core.KonyJSFacade)self).logFatal( (java.util.Hashtable)TableLib.convertToHash(inputKey0)
+ );
+ 
+ ret = new Object[]{LuaNil.nil, new Double(0)};
+ 		return ret;
+	}
+ 
+ 
+ 	public final Object[] logPerf( Object self ,com.konylabs.vm.LuaTable inputKey0
+ ){
+ 
+		Object[] ret = null;
+ ((com.kony.logger.Core.KonyJSFacade)self).logPerf( (java.util.Hashtable)TableLib.convertToHash(inputKey0)
  );
  
  ret = new Object[]{LuaNil.nil, new Double(0)};

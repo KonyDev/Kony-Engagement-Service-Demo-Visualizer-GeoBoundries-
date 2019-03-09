@@ -415,7 +415,9 @@ function frmUrl2Globals() {
         "enabledForIdleTimeout": false,
         "id": "frmUrl2",
         "needAppMenu": true,
-        "preShow": p2kwiet428023489589_frmUrl_preshow_seq0,
+        "preShow": function(eventobject) {
+            p2kwiet428023489589_frmUrl_preshow_seq0(eventobject);
+        },
         "skin": "sknKonyThemeForm",
         "title": "Demo App Settings"
     }, {

@@ -272,7 +272,9 @@ function frmPreferenceGlobals() {
         "enabledForIdleTimeout": false,
         "id": "frmPreference",
         "needAppMenu": true,
-        "preShow": p2kwiet428023489520_frmPreference_preshow_seq0,
+        "preShow": function(eventobject) {
+            p2kwiet428023489520_frmPreference_preshow_seq0(eventobject);
+        },
         "skin": "sknKonyThemeForm",
         "title": "My Preferences"
     }, {

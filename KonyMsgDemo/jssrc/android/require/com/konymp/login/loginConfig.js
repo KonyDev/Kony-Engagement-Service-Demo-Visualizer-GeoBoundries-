@@ -161,7 +161,7 @@ define(function() {
             "configurable": false,
             "writable": true
         }],
-        "apis": ["invokeIdentityService", "getUsername", "getPassword", "enableTouchID", "rememberMe"],
+        "apis": [],
         "events": ["forgotPasswordOnClick", "loginSuccessEvent", "usernameOnDone", "passwordOnDone", "submitOnClick", "remembermeOnSelection", "loginFailureEvent"]
     }
 });

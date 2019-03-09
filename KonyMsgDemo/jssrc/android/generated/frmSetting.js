@@ -344,7 +344,9 @@ function frmSettingGlobals() {
         "enabledForIdleTimeout": false,
         "id": "frmSetting",
         "needAppMenu": true,
-        "preShow": p2kwiet428023489565_frmSetting_preshow_seq0,
+        "preShow": function(eventobject) {
+            p2kwiet428023489565_frmSetting_preshow_seq0(eventobject);
+        },
         "skin": "sknKonyThemeForm",
         "title": "Demo App Setting"
     }, {

@@ -6,6 +6,7 @@ function initializetmpLocations() {
         "id": "rowLocation",
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
+        "isModalContainer": false,
         "skin": "CopyslFbox0e573fbd1a2bb4f"
     }, {}, {});
     rowLocation.setDefaultUnit(kony.flex.DP);

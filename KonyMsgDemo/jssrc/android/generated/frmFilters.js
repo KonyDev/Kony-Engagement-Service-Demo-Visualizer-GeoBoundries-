@@ -8,6 +8,7 @@ function addWidgetsfrmFilters() {
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
         "left": "0dp",
+        "isModalContainer": false,
         "skin": "CopyslFbox0hd89bedba0024a",
         "top": "8%",
         "width": "100%",
@@ -336,7 +337,9 @@ function frmFiltersGlobals() {
         "id": "frmFilters",
         "layoutType": kony.flex.FREE_FORM,
         "needAppMenu": false,
-        "preShow": AS_Form_f583008c69604bdeb7aaf1026c2d3b34,
+        "preShow": function(eventobject) {
+            AS_Form_f583008c69604bdeb7aaf1026c2d3b34(eventobject);
+        },
         "skin": "CopyslForm0f405dc2f570647"
     }, {
         "displayOrientation": constants.FORM_DISPLAY_ORIENTATION_PORTRAIT,

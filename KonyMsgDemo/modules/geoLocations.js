@@ -7,14 +7,14 @@ var refreshBoundaryDetails = {};
 function getGeoLocations() {
     client = client || kony.sdk.getCurrentInstance();
     konyRef.messagingsvc = {};
-  //client.messagingsvc={};
+  client.messagingsvc.url=KMSPROP.kmsServerUrl + "/api/v1";
   kony.application.showLoadingScreen(null, "Loading...", constants.LOADING_SCREEN_POSITION_ONLY_CENTER, false, true, {});
-    client.setMessagingServiceEndPoint(KMSPROP.kmsServerUrl + "/api/v1");
     messagingSvc = client.getMessagingService();
     messagingSvc.setKmsAppId(KMSPROP.appId);
     messagingSvc.setKSID(kony.store.getItem("KSID"));
     registerGeoBoundary(10, "");
-}
+} 
+ 
 
 function registerGeoBoundary(radius, tags) {
   

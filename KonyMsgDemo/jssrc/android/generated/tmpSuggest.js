@@ -6,6 +6,7 @@ function initializetmpSuggest() {
         "id": "flxTmpSuggest",
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
+        "isModalContainer": false,
         "skin": "CopyslFbox0i4e5f50674ed4f"
     }, {}, {});
     flxTmpSuggest.setDefaultUnit(kony.flex.DP);

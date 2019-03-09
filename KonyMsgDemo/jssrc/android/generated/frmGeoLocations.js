@@ -8,6 +8,7 @@ function addWidgetsfrmGeoLocations() {
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
         "left": "0%",
+        "isModalContainer": false,
         "skin": "CopyslFbox0aae7775511c841",
         "top": "0%",
         "width": "100%",
@@ -43,6 +44,7 @@ function addWidgetsfrmGeoLocations() {
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
         "left": "0%",
+        "isModalContainer": false,
         "skin": "slFbox",
         "top": "0%",
         "width": "100%",
@@ -170,6 +172,7 @@ function addWidgetsfrmGeoLocations() {
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
         "left": "0%",
+        "isModalContainer": false,
         "skin": "CopyslFbox0fe7829f837584d",
         "top": "10%",
         "width": "100%",
@@ -257,7 +260,9 @@ function frmGeoLocationsGlobals() {
         "id": "frmGeoLocations",
         "layoutType": kony.flex.FREE_FORM,
         "needAppMenu": false,
-        "preShow": AS_Form_fb28f3ac962e4877bd891230933fa271,
+        "preShow": function(eventobject) {
+            AS_Form_fb28f3ac962e4877bd891230933fa271(eventobject);
+        },
         "skin": "slForm"
     }, {
         "displayOrientation": constants.FORM_DISPLAY_ORIENTATION_PORTRAIT,
